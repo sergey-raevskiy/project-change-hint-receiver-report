@@ -2,8 +2,8 @@
 
 ## Problem description
 
-Visual Studio 2022 doesn't report added files via `IProjectChangeHintReceiver`
-for JavaScript Projects.
+Visual Studio 2022 doesn't report files added with `Add -> New Item`
+via `IProjectChangeHintReceiver` for JavaScript Projects.
 
 This repository contains a synthetic example for demonstration purposes, but the
 problem was originally reproduced on a real-world source control plug-in.

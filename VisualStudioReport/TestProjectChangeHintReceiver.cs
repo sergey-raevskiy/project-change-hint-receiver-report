@@ -55,6 +55,18 @@ namespace VisualStudioReport
             return vsOutputWindowPane;
         }
 
+        private string StrHint(IProjectChangeHint hint)
+        {
+            if (hint is ProjectChangeFileSystemEntityHint fileSystemEntityHint)
+            {
+                return string.Join(", ", fileSystemEntityHint.Files);
+            }
+            else
+            {
+                return hint.ToString();
+            }
+        }
+
         public async Task HintedAsync(IImmutableDictionary<Guid, IImmutableSet<IProjectChangeHint>> hints)
         {
             await threadingService.SwitchToUIThread();
@@ -63,7 +75,7 @@ namespace VisualStudioReport
 
             foreach (IProjectChangeHint hint in hints.SelectMany(h => h.Value))
             {
-                pane.OutputString("HintedAsync(" + hint + ")\r\n");
+                pane.OutputString("HintedAsync(" + StrHint(hint) + ")\r\n");
             }
         }
 
@@ -73,7 +85,7 @@ namespace VisualStudioReport
 
             IVsOutputWindowPane pane = OpenOutputPane();
 
-            pane.OutputString("HintingAsync(" + hint + ")\r\n");
+            pane.OutputString("HintingAsync(" + StrHint(hint) + ")\r\n");
         }
     }
 }

@@ -25,6 +25,6 @@ problem was originally reproduced on a real-world source control plug-in.
 
 ## Environment
 
-Microsoft Visual Studio Professional 2022 Version 17.9.0
-Microsoft Visual Studio Professional 2022 Version 17.10.0 Preview 1.0
-Windows 11 Version 10.0.22621 Build 22621
+- Microsoft Visual Studio Professional 2022 Version 17.9.0
+- Microsoft Visual Studio Professional 2022 Version 17.10.0 Preview 1.0
+- Windows 11 Version 10.0.22621 Build 22621

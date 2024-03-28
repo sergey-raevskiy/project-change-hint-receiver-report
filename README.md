@@ -14,15 +14,14 @@ problem was originally reproduced on a real-world source control plug-in.
 2. Open the solution in Visual Studio.
 3. `Debug -> Start Debugging (F5)`.
 4. In the opened Visual Studio Experimental Instance:
-   - Create a new C# Core Project (e.g. `ConsoleApp1`)
-   - Add new source code file to the project via `Add -> New Item`
-   - The output window should appear showing log messages for
-     received `IProjectChangeHint` notifications
-
-  In contrast:
-   - Create a new JavaScript Project (e.g. `NodeConsoleApp1`)
-   - Add new source code file to the project via `Add -> New Item`
-   - Nothing will happen
+    - Create a new C# Core Project (e.g. `ConsoleApp1`)
+    - Add new source code file to the project via `Add -> New Item`
+    - The output window should appear showing log messages for
+      received `IProjectChangeHint` notifications
+   In contrast:
+    - Create a new JavaScript Project (e.g. `NodeConsoleApp1`)
+    - Add new source code file to the project via `Add -> New Item`
+    - Nothing will happen
 
 ## Environment
 

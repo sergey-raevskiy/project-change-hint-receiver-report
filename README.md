@@ -18,7 +18,7 @@ problem was originally reproduced on a real-world source control plug-in.
     - Add new source code file to the project via `Add -> New Item`
     - The output window should appear showing log messages for
       received `IProjectChangeHint` notifications
-   In contrast:
+5. In contrast:
     - Create a new JavaScript Project (e.g. `NodeConsoleApp1`)
     - Add new source code file to the project via `Add -> New Item`
     - Nothing will happen
